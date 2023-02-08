@@ -9,8 +9,12 @@ class Insect:
         self.fly = range(1,10)
 
     def flight(self):
-        if random.randint() == range(1,10):
-            
+        r = random.randint(1,10)
+        if r == range(1,10):
+            self.fly = r
+
+    def get_flight(self):
+        return self.fly
         
 
 
